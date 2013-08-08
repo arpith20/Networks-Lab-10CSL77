@@ -4,7 +4,7 @@ To exexute:
 -----------
 To run the simulation:
 ```
-$ns 1.tcl
+$ns <name>.tcl
 ```
 To plot the graph:
 ```
