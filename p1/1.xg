@@ -1,0 +1,26 @@
+TitleText: Performance Analysis (Bandwidth vs Packet Dropped) 
+XUnitText: Bandwidth(in Mbps)
+YUnitText: No.of Packet Dropped
+
+"CBR"
+0.25 617
+0.50 369
+0.75 138
+1.0 80
+1.25 62
+1.5 32
+1.75 38
+2.0 0
+
+"TCP"
+0.25 6
+0.50 8
+0.75 6
+1.0 9
+1.25 15
+1.5 10
+1.75 8
+2.0 0
+
+
+
