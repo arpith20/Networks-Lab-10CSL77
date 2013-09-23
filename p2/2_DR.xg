@@ -1,0 +1,29 @@
+TitleText: Performance Analysis (Bandwidth vs Packet Arrival Ratio) 
+XUnitText: Bandwidth(in Mbps)
+YUnitText: Packet arrival ratio
+
+"TCP"
+0.25 0.67
+0.50 0.75
+0.75 0.38
+1.0 0.38
+1.25 0.63
+1.5 0.29
+1.75 0.12
+2.0 0.04
+2.25 0.004
+2.5 0
+2.75 0
+
+"CBR"
+0.25 0.79
+0.50 0.63
+0.75 0.48
+1.0 0.32
+1.25 0.16
+1.5 0.05
+1.75 0.01
+2.0 0.001
+2.25 0.001
+2.5 0
+2.75 0
