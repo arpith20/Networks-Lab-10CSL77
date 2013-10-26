@@ -8,18 +8,18 @@ using namespace std;
 int main()
 {
         char fname[50];
-        int sd, source, size, file;
+        int sd, source, file;
         struct sockaddr_in address;
 
         address.sin_family = AF_INET;
-        address.sin_port = htons(15000);
+        address.sin_port = htons(5000);
         address.sin_addr.s_addr = INADDR_ANY;
 
         cout<<"Waiting for request."<<endl;
         
         sd = socket(AF_INET, SOCK_STREAM, 0);
         bind(sd, (struct sockaddr*)&address, sizeof(address));
-        listen(sd, 3);
+        listen(sd, 10);
 
         while(1)
         {
@@ -41,6 +41,11 @@ int main()
                         send(source, buffer, length, 0);
 
                         delete[] buffer;
+                }
+                else
+                {
+                        cout<<"Sending file not found"<<endl;
+                        send(source, "File not found", sizeof("File not found"), 0);
                 }
         }
 

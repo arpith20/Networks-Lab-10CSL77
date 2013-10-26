@@ -5,6 +5,15 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
+	/*
+	if(argc!=2)
+	{
+		cout<<"Usage: "<<argv[0]<<" <ip-address>"<<endl;
+		cout<<"No server IP specified as argument!\n";
+		return 1;
+	}
+	*/
+	
 	char fname[50], buffer[1025];
 	int sd;
 	struct sockaddr_in address;
